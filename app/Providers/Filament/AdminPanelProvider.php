@@ -27,6 +27,7 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->brandName('Fittie Counters')
+            ->favicon("https://fav.farm/⚔️")
             ->login()
             ->colors([
                 'primary' => Color::Red,

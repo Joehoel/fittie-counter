@@ -1,3 +1,7 @@
+
+@push('meta')
+    <x-open-graph-image::metatags :title="$counter->name" :description="$counter->userOne->name . ' vs ' . $counter->userTwo->name" :name="$counter->name" :userOneName="$counter->userOne->name" :userOneScore="$counter->user_one_score" :userTwoName="$counter->userTwo->name" :userTwoScore="$counter->user_two_score" />
+@endpush
 <div class="h-screen w-screen flex flex-col sm:flex-row overflow-hidden relative">
     <!-- Blue side (User One) -->
     <div class="h-1/2 sm:h-full w-full sm:w-1/2 bg-blue-600 flex items-center justify-center p-4">
