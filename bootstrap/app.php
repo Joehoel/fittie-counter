@@ -13,7 +13,8 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withMiddleware(function (Middleware $middleware) {
         $middleware
             ->trustProxies(at: ["*"])
-            ->validateCsrfTokens(except: ["/open-graph-image"]);
+            ->validateCsrfTokens(except: ["/open-graph-image"])
+            ->validateSignatures(except: ["/open-graph-image"]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
